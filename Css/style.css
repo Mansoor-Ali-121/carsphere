@@ -1,0 +1,95 @@
+.navbar-section {
+  background-color: #000000;
+  padding: 20px;
+}
+.logo {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+  font-size: 35px;
+  color: rgb(4, 231, 185);
+}
+.logo:hover {
+  color: rgb(4, 231, 185);
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-item {
+  margin: 0 20px;
+}
+.nav-link {
+  font-size: 25px;
+  color: rgb(177, 175, 175);
+  text-decoration: none;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-link:hover {
+  color: rgb(4, 231, 185);
+  transition: color 2s ease;
+
+}
+
+.nav-link:focus,
+.nav-link:active {
+  color: #00f9b2; /* same as hover, or whatever you want */
+  outline: none;
+}
+.btn {
+  font-size: 20px;
+  color: rgb(177, 175, 175);
+  background-color: rgb(3, 3, 3);
+  padding: 10px 20px;
+  font-family: "EB Garamond", serif;
+  border: 2px solid rgb(4, 231, 185);
+  border-radius: 5px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+    transition: background-color 2s ease, color 2s ease;
+  background-color: rgb(4, 231, 185);
+  color: #000000;
+
+}
+
+/* Section-crosal */
+
+.hero-section {
+  background-image: url("../Images/car7.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.hero-section h1 {
+  font-size: 70px;
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+}
+
+.hero-section p {
+  font-size: 25px;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 5px;
+  height: 300px;
+  width: 80%;
+}
+.hero-content .highlight{
+    color: rgb(4, 231, 185);
+    font-weight: bold;
+}
