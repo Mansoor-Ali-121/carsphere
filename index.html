@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Sphere</title>
@@ -8,7 +8,7 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      xintegrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,45 +17,76 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manufacturing+Consent&display=swap"
       rel="stylesheet"
     />
+    <!-- Tailwind CSS CDN (isey Bootstrap ke saath istemal karne ke liye) -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom css link -->
     <link rel="stylesheet" href="./Css/style.css" />
-  </head>
-  <body>
+</head>
+<body class="bg-black text-white">
     <!-- navbar -->
     <section class="navbar-section">
       <nav class="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand logo"
-            ><img
-              src="./Images/carlogo.png"
-              alt=""
-              style="height: 64px; width: 153px"
-          /></a>
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shop Now</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn" type="submit">Search</button>
-          </form>
+        <div class="container-fluid flex justify-between items-center w-full">
+            <a class="navbar-brand logo">
+                <img
+                    src="./Images/carlogo.png"
+                    alt=""
+                    style="height: 64px; width: 153px"
+                />
+            </a>
+            
+            <!-- Hamburger Icon sirf mobile par dikhega -->
+            <div class="hamburger-icon md:hidden" id="hamburger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <!-- Desktop Links aur Search Form -->
+            <div class="nav-desktop-links hidden md:flex items-center space-x-5">
+                <ul class="nav justify-content-center flex space-x-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop Now</a>
+                    </li>
+                </ul>
+                <form class="d-flex flex items-center space-x-2" role="search">
+                    <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    />
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </div>
         </div>
       </nav>
+      <!-- Mobile menu jo open hone par dikhega -->
+      <div class="mobile-nav-links md:hidden" id="mobile-nav">
+          <ul class="nav flex flex-col items-center">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Shop Now</a>
+              </li>
+          </ul>
+      </div>
     </section>
     <!-- navbar end -->
 
@@ -69,7 +100,7 @@
     </section>
     <!-- hero section end -->
 
-    <!-- Cards section  -->
+    <!-- Cards section  -->
     <div class="card-section">
       <div class="container text-center">
         <h1 class="heading">Discover Your Next Ride</h1>
@@ -228,18 +259,42 @@
           <h1 class="heading">Subscribe to Our Special Offers</h1>
           <p class="sub-heading">Get exclusive offers and updates</p>
           <form>
-            <input type="email" class="email" placeholder="Enter your email" />
-            <button type="submit" class="btn subscribe-btn">Subscribe</button>
+            <input
+              type="email"
+              class="email rounded-start-pill p-2"
+              placeholder="Enter your email"
+            />
+            <button
+              type="submit"
+              class="btn subscribe-btn rounded-end-pill p-2"
+            >
+              Subscribe
+            </button>
           </form>
         </div>
       </div>
     </section>
     <!-- Subscription form end -->
-  </body>
-  <!-- Bootstrap JS -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"
-  ></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      xintegrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- JavaScript to toggle the hamburger menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger-icon');
+            const mobileNav = document.getElementById('mobile-nav');
+
+            if (hamburger && mobileNav) {
+                hamburger.addEventListener('click', () => {
+                    mobileNav.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
 </html>

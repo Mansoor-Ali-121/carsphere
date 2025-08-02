@@ -1,206 +1,259 @@
-.navbar-section {
-  background-color: #000000;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: auto;
-}
-.logo {
-  font-family: "Manufacturing Consent", system-ui;
-  font-weight: 400;
-  font-size: 35px;
-  color: rgb(4, 231, 185);
-}
-.logo:hover {
-  color: rgb(4, 231, 185);
-  text-decoration: none;
-  cursor: pointer;
-}
-.nav-item {
-  margin: 0 5px;
-}
-.nav-link {
-  font-size: 25px;
-  color: rgb(177, 175, 175);
-  text-decoration: none;
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-}
-input[type="search"] {
-  width: 300px;
-  padding: 10px;
-  border-radius: 20px;
-  font-size: 20px;
-  font-family: "EB Garamond", serif;
-  background-color: rgb(3, 3, 3);
-  color: rgb(177, 175, 175);
-}
-input[type="search"]::placeholder {
-  color: rgb(177, 175, 175);
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-}
-input[type="search"]:focus {
-  outline: none;
-  border: 2px solid rgb(4, 231, 185);
-}
-.nav-link:hover {
-  color: rgb(4, 231, 185);
-  transition: color 1s ease;
-}
 
-.nav-link:focus,
-.nav-link:active {
-  color: #00f9b2; /* same as hover, or whatever you want */
-  outline: none;
-}
-.btn {
-  font-size: 20px;
-  color: rgb(177, 175, 175);
-  background-color: rgb(3, 3, 3);
-  padding: 5px 20px 5px 20px;
-  font-family: "EB Garamond", serif;
-  border: 2px solid rgb(4, 231, 185);
-  border-radius: 20px;
-  font-weight: 400;
-  font-style: normal;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.btn:hover {
-  transition: background-color 2s ease, color 2s ease;
-  background-color: rgb(4, 231, 185);
-  color: #000000;
-}
+        /* Aap ka CSS yahan par direct shamil kiya gaya hai, taake yeh bilkul sahi kaam kare */
+        .navbar-section {
+            background-color: #000000;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .logo {
+            font-family: "Manufacturing Consent", system-ui;
+            font-weight: 400;
+            font-size: 35px;
+            color: rgb(4, 231, 185);
+        }
+        .logo:hover {
+            color: rgb(4, 231, 185);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .nav-item {
+            margin: 0 5px;
+        }
+        .nav-link {
+            font-size: 25px;
+            color: rgb(177, 175, 175);
+            text-decoration: none;
+            font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+        }
+        input[type="search"] {
+            width: 300px;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-family: "EB Garamond", serif;
+            background-color: rgb(3, 3, 3);
+            color: rgb(177, 175, 175);
+        }
+        input[type="search"]::placeholder {
+            color: rgb(177, 175, 175);
+            font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+        }
+        input[type="search"]:focus {
+            outline: none;
+            border: 2px solid rgb(4, 231, 185);
+        }
+        .nav-link:hover {
+            color: rgb(4, 231, 185);
+            transition: color 1s ease;
+        }
+        .nav-link:focus,
+        .nav-link:active {
+            color: #00f9b2;
+            outline: none;
+        }
+        .btn {
+            font-size: 20px;
+            color: rgb(177, 175, 175);
+            background-color: rgb(3, 3, 3);
+            padding: 5px 20px 5px 20px;
+            font-family: "EB Garamond", serif;
+            border: 2px solid rgb(4, 231, 185);
+            border-radius: 20px;
+            font-weight: 400;
+            font-style: normal;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .btn:hover {
+            transition: background-color 2s ease, color 2s ease;
+            background-color: rgb(4, 231, 185);
+            color: #000000;
+        }
+        
+        .hamburger-icon {
+            display: none; /* Desktop par hide karen */
+            flex-direction: column;
+            justify-content: space-around;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+            z-index: 1001;
+        }
 
-/* Section-crosal */
+        .hamburger-icon .bar {
+            width: 100%;
+            height: 3px;
+            background-color: rgb(4, 231, 185);
+            transition: all 0.3s ease;
+        }
 
-.hero-section {
-  background-image: url("../Images/car7.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color: white;
-}
-.hero-section h1 {
-  font-size: 70px;
-  font-family: "Manufacturing Consent", system-ui;
-  font-weight: 400;
-}
+        .mobile-nav-links {
+            display: none; /* Shuru mein hide karen */
+            position: absolute;
+            top: 75px; /* Navbar ki height ke mutabiq adjust karen */
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(-100%);
+        }
+        
+        .mobile-nav-links.active {
+            display: flex;
+            transform: translateY(0);
+        }
 
-.hero-section p {
-  font-size: 25px;
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.hero-content {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px;
-  border-radius: 5px;
-  height: 300px;
-  width: 80%;
-}
-.hero-content .highlight {
-  color: rgb(4, 231, 185);
-  font-weight: bold;
-}
+        .mobile-nav-links .nav-item {
+            margin: 10px 0;
+        }
 
-/* Card section */
-.card-section {
-  width: 100%;
-  padding: 20px;
-  background-color: rgb(3, 3, 3);
-}
-.card {
-  background-color: #000000;
-  border: 1px solid rgb(4, 231, 185);
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: rgb(177, 175, 175);
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
-  height: 500px;
-  box-shadow: #00f9b2 0px 0px 10px 0px;
-}
-.card p {
-  font-size: 18px;
-  font-family: "EB Garamond", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(177, 175, 175);
-}
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-.card img {
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-.card-title {
-  font-size: 25px;
-  font-family: "EB Garamond", serif;
+        .mobile-nav-links .nav-link {
+            font-size: 20px;
+        }
 
-  font-weight: 400;
-  color: rgb(4, 231, 185);
-}
-.heading {
-  font-size: 80px;
-  font-family: "Manufacturing Consent", system-ui;
-  font-weight: 400;
-  color: rgb(4, 231, 185);
-  text-align: center;
-  margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-
-}
-.sub-heading {
-  font-size: 25px;
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(177, 175, 175);
-  text-align: center;
-}
-/* Card section end */
-
-/* Subscription form */
-.subscription-form-section {
-  background-image: url("../Images/car11.webp");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  padding: 50px;
-  text-align: center;
-}
-.email {
-  width: 300px;
-  padding: 10px;
-  border-radius: 20px;
-  font-size: 20px;
-  font-family: "EB Garamond", serif;
-  background-color: rgb(3, 3, 3);
-  color: rgb(177, 175, 175);
-}
-
-/* Subscription form end */
+        /* Media Query: 768px ya us se kam screen par */
+        @media (max-width: 768px) {
+            .nav-desktop-links {
+                display: none; /* Desktop links mobile par hide karen */
+            }
+            .hamburger-icon {
+                display: flex; /* Hamburger icon show karen */
+            }
+            .navbar .container-fluid {
+                padding: 0 1rem;
+            }
+        }
+        
+        /* Aap ke hero section aur cards section ke liye naya CSS */
+        .hero-section {
+            background-image: url("./Images/car7.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: "Manufacturing Consent", system-ui;
+        }
+        .hero-content .highlight {
+            color: rgb(4, 231, 185);
+        }
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .card-section {
+            padding: 5rem 0;
+            background-color: #1a1a1a;
+        }
+        .card-section .heading {
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgb(4, 231, 185);
+            margin-bottom: 0.5rem;
+        }
+        .card-section .sub-heading {
+            font-size: 1.25rem;
+            color: #ccc;
+            margin-bottom: 3rem;
+        }
+        .card-section .card {
+            background-color: #2a2a2a;
+            border: 1px solid #333;
+            border-radius: 1rem;
+            overflow: hidden;
+            color: white;
+            margin: 1rem;
+            transition: transform 0.3s ease;
+        }
+        .card-section .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-section .card-body {
+            padding: 1.5rem;
+            background-color: #1a1a1a;
+        }
+        .card-section .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: rgb(4, 231, 185);
+        }
+        .card-section .card-text {
+            color: #aaa;
+        }
+        .card-section .btn {
+            background-color: rgb(4, 231, 185);
+            color: black;
+            border: none;
+        }
+        .subscription-form-section {
+            background-color: #000000;
+            padding: 5rem 0;
+        }
+        .subscription-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .subscription-form .heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: rgb(4, 231, 185);
+        }
+        .subscription-form .sub-heading {
+            font-size: 1.25rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+        .subscription-form form {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+        .subscription-form .email {
+            width: 300px;
+            border: 2px solid rgb(4, 231, 185);
+            background-color: black;
+            color: white;
+            border-right: none; /* right side ka border hataya gaya */
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .subscription-form .subscribe-btn {
+            background-color: rgb(4, 231, 185);
+            color: black;
+            border: 2px solid rgb(4, 231, 185);
+            border-left: none; /* left side ka border hataya gaya */
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 0.5rem 1rem;
+        }
