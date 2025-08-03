@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Sphere</title>
@@ -21,71 +21,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- custom css link -->
     <link rel="stylesheet" href="./Css/style.css" />
-</head>
-<body class="bg-black text-white">
+  </head>
+  <body class="bg-black text-white">
     <!-- navbar -->
     <section class="navbar-section">
       <nav class="navbar">
         <div class="container-fluid flex justify-between items-center w-full">
-            <a class="navbar-brand logo">
-                <img
-                    src="./Images/carlogo.png"
-                    alt=""
-                    style="height: 64px; width: 153px"
-                />
-            </a>
-            
-            <!-- Hamburger Icon sirf mobile par dikhega -->
-            <div class="hamburger-icon md:hidden" id="hamburger-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+          <a class="navbar-brand logo">
+            <img
+              src="./Images/carlogo.png"
+              alt=""
+              style="height: 64px; width: 153px"
+            />
+          </a>
 
-            <!-- Desktop Links aur Search Form -->
-            <div class="nav-desktop-links hidden md:flex items-center space-x-5">
-                <ul class="nav justify-content-center flex space-x-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop Now</a>
-                    </li>
-                </ul>
-                <form class="d-flex flex items-center space-x-2" role="search">
-                    <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                    />
-                    <button class="btn" type="submit">Search</button>
-                </form>
-            </div>
+          <!-- Hamburger Icon sirf mobile par dikhega -->
+          <div class="hamburger-icon md:hidden" id="hamburger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+
+          <!-- Desktop Links aur Search Form -->
+          <div class="nav-desktop-links hidden md:flex items-center space-x-5">
+            <ul class="nav justify-content-center flex space-x-4">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop Now</a>
+              </li>
+            </ul>
+            <form class="d-flex flex items-center space-x-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">Search</button>
+            </form>
+          </div>
         </div>
       </nav>
       <!-- Mobile menu jo open hone par dikhega -->
       <div class="mobile-nav-links md:hidden" id="mobile-nav">
-          <ul class="nav flex flex-col items-center">
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Shop Now</a>
-              </li>
-          </ul>
+        <ul class="nav flex flex-col items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop Now</a>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- navbar end -->
@@ -99,6 +99,57 @@
       </div>
     </section>
     <!-- hero section end -->
+
+    <!-- API FOr cars details GEmini ENter car name company and model -->
+
+    <section class="featured-car-section py-12 px-4">
+      <div class="container mx-auto text-center">
+        <h2 class="featured-heading mb-4 heading">Car of the Month</h2>
+        <p class="featured-sub-heading text-lg mb-8">
+          Introducing our hand-picked special, offering a blend of performance
+          and luxury.
+        </p>
+
+        <div
+          class="featured-car-card flex flex-col md:flex-row items-center justify-center p-8 bg-black rounded-lg border border-teal-400"
+        >
+          <div class="featured-car-image md:w-1/2 w-full mb-6 md:mb-0">
+            <img
+              src="./Images/car4.jpg"
+              alt="Featured Car"
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+          <div class="featured-car-details md:w-1/2 w-full md:pl-8 text-left">
+            <h3
+              class="featured-car-title text-3xl font-semibold mb-2 text-teal-400"
+            >
+              The New Horizon GT
+            </h3>
+            <p class="featured-car-description text-gray-300 mb-4">
+              Experience a new era of driving with the Horizon GT. Its sleek
+              design, powerful V8 engine, and state-of-the-art technology
+              redefine automotive excellence. Perfect for both city streets and
+              open highways.
+            </p>
+            <ul class="featured-car-specs list-none text-gray-400">
+              <li><strong class="text-teal-400">Engine:</strong> 5.0L V8</li>
+              <li><strong class="text-teal-400">Horsepower:</strong> 450 hp</li>
+              <li>
+                <strong class="text-teal-400">Features:</strong> Advanced
+                Infotainment, Lane-Assist, Panoramic Sunroof
+              </li>
+              <li><strong class="text-teal-400">Price:</strong> $85,000</li>
+            </ul>
+            <a
+              href="#"
+              class="btn mt-6 inline-block bg-teal-500 text-black font-semibold py-3 px-6 rounded-lg hover:bg-teal-400 transition-colors"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Cards section  -->
     <div class="card-section">
@@ -176,21 +227,18 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Row 2 -->
-        <div class="row">
           <div class="col">
             <div class="card" style="width: 18rem">
               <img
                 src="./Images/car6.jpg"
                 class="card-img-top"
-                alt="Luxury Convertible"
+                alt="Electric Vehicle"
               />
               <div class="card-body">
-                <h5 class="card-title">Luxury Convertible</h5>
+                <h5 class="card-title">Eco-Friendly Electric</h5>
                 <p class="card-text">
-                  Feel the open road with this elegant convertible. Premium
-                  materials and sophisticated engineering for a refined drive.
+                  Drive into the future with this all-electric vehicle. Zero
+                  emissions and impressive range for sustainable travel.
                 </p>
                 <a href="#" class="btn">View Details</a>
               </div>
@@ -201,47 +249,13 @@
               <img
                 src="./Images/car6.jpg"
                 class="card-img-top"
-                alt="Rugged Pickup Truck"
+                alt="Compact SUV"
               />
               <div class="card-body">
-                <h5 class="card-title">Rugged Pickup Truck</h5>
+                <h5 class="card-title">Versatile Compact SUV</h5>
                 <p class="card-text">
-                  Built for tough jobs and tough terrains. This pickup offers
-                  unmatched towing capacity and durability for any challenge.
-                </p>
-                <a href="#" class="btn">View Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img
-                src="./Images/car6.jpg"
-                class="card-img-top"
-                alt="Hybrid Hatchback"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Efficient Hybrid Hatchback</h5>
-                <p class="card-text">
-                  Get the best of both worlds with this fuel-efficient hybrid.
-                  Perfect for city driving.
-                </p>
-                <a href="#" class="btn">View Details</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem">
-              <img
-                src="./Images/car6.jpg"
-                class="card-img-top"
-                alt="Vintage Classic Car"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Timeless Classic Car</h5>
-                <p class="card-text">
-                  Own a piece of automotive history with this beautifully
-                  preserved classic. A true collector's.
+                  Combining urban agility with off-road capability, this SUV is
+                  perfect for adventurers and city dwellers alike.
                 </p>
                 <a href="#" class="btn">View Details</a>
               </div>
@@ -282,19 +296,19 @@
       xintegrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    
+
     <!-- JavaScript to toggle the hamburger menu -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const hamburger = document.getElementById('hamburger-icon');
-            const mobileNav = document.getElementById('mobile-nav');
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger-icon");
+        const mobileNav = document.getElementById("mobile-nav");
 
-            if (hamburger && mobileNav) {
-                hamburger.addEventListener('click', () => {
-                    mobileNav.classList.toggle('active');
-                });
-            }
-        });
+        if (hamburger && mobileNav) {
+          hamburger.addEventListener("click", () => {
+            mobileNav.classList.toggle("active");
+          });
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
